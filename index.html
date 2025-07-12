@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>방탈출 게임</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="start-screen">
+        <div id="start-modal">
+            <h2>정보를 입력하세요</h2>
+            <input type="text" id="grade-input" placeholder="학년">
+            <input type="text" id="name-input" placeholder="이름">
+            <button id="start-button">게임 시작</button>
+        </div>
+    </div>
+
+    <div id="game-container">
+        <div id="user-info-display"></div>
+        <!-- ▼▼▼ 이 플레이어 div가 가장 중요합니다! ▼▼▼ -->
+        <div id="player"></div>
+
+        <!-- 방 1 -->
+        <div id="room1" class="room active">
+            <div class="prompt" data-index="1"></div>
+            <div class="prompt" data-index="2"></div>
+            <div class="prompt" data-index="3"></div>
+            <div class="prompt" data-index="4"></div>
+            <div class="door"></div>
+            <input type="text" class="password-input" id="password-room1" maxlength="4" placeholder="비밀번호">
+            <button class="password-submit" data-room="1">확인</button>
+        </div>
+
+        <!-- 방 2 -->
+        <div id="room2" class="room">
+            <div class="prompt" data-index="1"></div>
+            <div class="prompt" data-index="2"></div>
+            <div class="prompt" data-index="3"></div>
+            <div class="prompt" data-index="4"></div>
+            <div class="door"></div>
+            <input type="text" class="password-input" id="password-room2" maxlength="4" placeholder="비밀번호">
+            <button class="password-submit" data-room="2">확인</button>
+        </div>
+
+        <!-- 방 3 -->
+        <div id="room3" class="room">
+            <div class="prompt" data-index="1"></div>
+            <div class="prompt" data-index="2"></div>
+            <div class="prompt" data-index="3"></div>
+            <div class="prompt" data-index="4"></div>
+            <div class="door"></div>
+            <input type="text" class="password-input" id="password-room3" maxlength="4" placeholder="비밀번호">
+            <button class="password-submit" data-room="3">확인</button>
+        </div>
+
+        <!-- 방 4 -->
+        <div id="room4" class="room">
+            <div class="prompt" data-index="1"></div>
+            <div class="prompt" data-index="2"></div>
+            <div class="prompt" data-index="3"></div>
+            <div class="prompt" data-index="4"></div>
+            <div class="door"></div>
+            <input type="text" class="password-input" id="password-room4" maxlength="4" placeholder="비밀번호">
+            <button class="password-submit" data-room="4">확인</button>
+        </div>
+
+        <!-- 방 5 -->
+        <div id="room5" class="room">
+            <div class="prompt" data-index="1"></div>
+            <div class="prompt" data-index="2"></div>
+            <div class="prompt" data-index="3"></div>
+            <div class="prompt" data-index="4"></div>
+            <div class="door"></div>
+            <input type="text" class="password-input" id="password-room5" maxlength="4" placeholder="비밀번호">
+            <button class="password-submit" data-room="5">확인</button>
+        </div>
+
+        <div id="win-message">탈출 성공!</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
